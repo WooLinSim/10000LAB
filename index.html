@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>커피, 그 이상의 문화 만랩커피</title>
+    <!--파비콘-->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image">
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+        $(function(){
+            //위로 올라가기 버튼
+            $( window ).scroll( function(){
+                if ( $( this ).scrollTop() > 1050 ) {
+                    $( '.tothetop' ).fadeIn();
+                }else { $( '.tothetop' ).fadeOut();
+                    } 
+            } );
+            $( '.tothetop' ).click( function() {
+                $( 'html, body' ).animate( { scrollTop : 0 }, 400 ); return false;
+            } );
+
+            var h_top=$('.header_bottom').offset().top;
+            $(window).scroll(function(){
+                var win_top=$(window).scrollTop();
+                if(win_top>=h_top) {
+                    $('.header_bottom').addClass('active');
+                    }else{
+                        $('.header_bottom').removeClass('active');
+                    }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="tothetop"><a href="#"><img src="img/top.gif" alt="위로가기"></a></div>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo2.png" alt="헤더로고"></a>
+            </div>
+            <div class="header_bottom">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">ABOUT US</a>
+                            <ul class="sub sub1">
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">10000LAB IS</a></li>
+                                <li><a href="#">RULES</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SPECIALTY</a>
+                            <ul class="sub sub2">
+                                <li><a href="#">SPECIALTY</a></li>
+                                <li><a href="#">Daily</a></li>
+                                <li><a href="#">Guatemala</a></li>
+                                <li><a href="#">Kenya</a></li>
+                                <li><a href="#">Costarica</a></li>
+                                <li><a href="#">Ethiopia</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MENU</a>
+                            <ul class="sub sub3">
+                                <li><a href="#">New</a></li>
+                                <li><a href="#">Beverage</a></li>
+                                <li><a href="#">Bakery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">STORE</a>
+                            <ul class="sub sub4">
+                                <li><a href="#">국내 매장</a></li>
+                                <li><a href="#">해외 매장</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ISSUE</a>
+                            <ul class="sub sub5">
+                                <li><a href="#">우수 가맹점</a></li>
+                                <li><a href="#">NEWS</a></li>
+                                <li><a href="#">인재 채용</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="header_search">
+                        <img src="img/search_white.png" alt="검색 이미지">
+                        <input type="text">
+                        <button>검색</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="visual">
+                <div class="black20"></div>
+                <ul>
+                    <li><a href="#"><img src="img/coffee.png" alt="비쥬얼1이미지"></a></li>
+                    <li><a href="#"><img src="img/ade.png" alt="비쥬얼2이미지"></a></li>
+                    <li><a href="#"><img src="img/store.png" alt="비쥬얼3이미지"></a></li>
+                </ul>
+            </div> <!--비쥬얼 end-->
+            <div class="newcon">
+                <div class="new">
+                    <a href="#">NEW</a>
+                </div>
+                <div class="new1">
+                    <a href="#"><img src="img/s4.jpg" alt="와일드피치에이드"></a>
+                    <h3>WILD PEACH ADE, Present In February, 요거트 스무디 4종 등</h3>
+                    <p>만랩만의 신메뉴들을 바로 만나보세요!</p>
+                </div>
+            </div>
+            <div class="specialtycon">
+                <div class="specialty">
+                    <a href="#">SPECIALTY</a>
+                </div>
+                <div class="c1">
+                    <div class="c1over">
+                        <p>스페셜티 과테말라, 브라질, 콜롬비아, 케냐를 블렌딩한 고품격 과테말라 스페셜티 커피</p>
+                        <a href="#">더보기</a>
+                    </div>
+                </div>
+                <div class="c2">
+                    <div class="c2over">
+                        <p>비옥한 화산 토양과 온화한 기후로 우수한 품질의 커피를 생산하는 코스타리카에서 재배된 고급 커피 코스타리카 볼칸아술</p>
+                        <a href="#">더보기</a>
+                    </div>
+                </div>
+                <div class="c3">
+                    <div class="c3over">
+                        <p>아프리카 명산인 킬리만자의 동쪽 케냐에서 재배되는 고급 커피 케냐 AA TPO</p>
+                        <a href="#">더보기</a>
+                    </div>
+                </div>
+                <div class="c4">
+                    <div class="c4over">
+                        <p>에티오피아의 남서부에 위치한 시다모지역에서 재배된 고급 커피 에티오피아 구지 G1</p>
+                        <a href="#">더보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bakerycon">
+                <div class="bakery"><a href="#">BAKERY</a></div>
+                <div class="b1"><a href="#"><img src="img/b1.jpg" alt="빈티라미수말차"></a>빈 티라미수 말차<br>Bean Tiramisu Matcha</div>
+                <div class="b2"><a href="#"><img src="img/b2.jpg" alt="빈티라미수클래식"></a>빈 티라미수 클래식<br>Bean Tiramisu Classic</div>
+                <div class="b3"><a href="#"><img src="img/b3.jpg" alt="밀크라운드케이크"></a>밀크 라운드 케이크<br>Milk Round Cake</div>
+                <div class="b4"><a href="#"><img src="img/b4.jpg" alt="가나슈라운드케이크"></a>가나슈 라운드 케이크<br>Ganache Round Cake</div>
+                <div class="b5"><a href="#"><img src="img/b5.jpg" alt="초코벨벳라운드케이크"></a>초코 벨벳 라운드 케이크<br>Choco Velvet Round Cake</div>
+                <div class="b6"><a href="#"><img src="img/b6.jpg" alt="레드벨벳라운드케이크"></a>레드 벨벳 라운드 케이크<br>Red Velvet Round Cake</div>
+                <div class="b7"><a href="#"><img src="img/b7.jpg" alt="쿠키3종"></a>쿠키 3종<br>Cookies</div>
+                <div class="b8"><a href="#"><img src="img/b8.jpg" alt="당근케이크"></a>당근 케이크<br>Carrot Cake</div>
+            </div>
+            <div class="banner"><img src="img/order.jpg" alt="예약주문문구"></div>
+            <div class="franchisecon">
+                <div class="f1">
+                    <iframe width="600" height="315" src="https://www.youtube.com/embed/6TYRguHHod0?amp;autoplay=1&amp;playlist=6TYRguHHod0&amp;loop=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding: 0px; margin: 0px;"></iframe>
+                    <div class="f1_1">
+                        <a href="#"><h3>NEWS</h3></a><br><br>
+                        <ul>
+                            <li><a href="#"><img src="img/favicon.jpg" alt="공지사항"> 만랩커피, '스페셜티 커피 드립백' 출시!</a></li>
+                            <li><a href="#"><img src="img/favicon.jpg" alt="공지사항2"> 스페셜티 커피 브랜드 만족조사 1위 '만랩커피'</a></li>
+                            <li><a href="#"><img src="img/favicon.jpg" alt="공지사항4"> 만랩커피, 한국공정거래조정원 인증 '착한 프랜차이즈' 브랜드 선정</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/f2_1.jpg" alt="우수 가맹점1"></div>
+                        <div class="swiper-slide"><img src="img/f2_2.jpg" alt="우수 가맹점2"></div>
+                        <div class="swiper-slide"><img src="img/f2_3.jpg" alt="우수 가맹점3"></div>
+                        <div class="swiper-slide"><img src="img/f2_4.png" alt="우수 가맹점4"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="f3"><a href="#">가맹 개설 문의</a></div>
+                <div class="f4"><input type="text" placeholder="매장명이나 시/군을 입력해보세요."></div>
+            </div>
+        </section>
+        <footer>
+            <div class="span"><span></span></div>
+            <div class="footerlogo"><img src="img/logo2.png" alt="푸터 로고"></div>
+            <div class="sns">
+                <a href="#"><img src="img/facebook2.png" alt="페이스북"></a>
+                <a href="#"><img src="img/instagram2.png" alt="인스타그램"></a>
+            </div>
+            <div class="footertext">
+                <h3>대표 번호 : 1544 - 1528</h3><br>평일 09:00-18:00 ㅣ 주말, 공휴일 제외)<br><br>상호명 : (주)만랩 ㅣ 대표 : 박경준 ㅣ 사업자등록번호 : 887-87-00295<br><address>서울특별시 강남주 역삼2동 언주로85길 24 유니팜타워 7층<br>(오시는길 : 지하철 역삼역 1번출구 도보 7분)</address><br><br>copyright ⓒ 2021 만랩커피 All rights reserved
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+            },
+        });
+    </script>
+</body>
+</html>
